@@ -1,10 +1,12 @@
 import React from "react";
+import "./heaterTemperature.css";
 
 interface HeaterTemperatureProps {
   minimumTemperature: number;
   maximumTemperature: number;
   targetTemperature: number;
 }
+
 export default function HeaterTemperature({
   minimumTemperature,
   maximumTemperature,

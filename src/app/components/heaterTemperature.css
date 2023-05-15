@@ -1,0 +1,65 @@
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-image: radial-gradient(circle at center,
+            black 8px,
+            transparent 8px),
+        radial-gradient(circle at center,
+            white 50%,
+            transparent 50%,
+            transparent 65%,
+            white 65%);
+}
+
+.temperature-line {
+    position: absolute;
+    height: 120px;
+    width: 4px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 2px;
+    background-color: black;
+    transform-origin: right;
+    transform-origin: bottom;
+}
+
+.minimum-temperature {
+    top: 150px;
+    left: 300px;
+    transform: rotate(130deg);
+}
+
+.maximum-temperature {
+    top: 150px;
+    left: -300px;
+    transform: rotate(-130deg);
+}
+
+.target-temperature {
+    height: 200px;
+    width: 8px;
+    top: -200px;
+    left: 0;
+}
+
+.target-temperature-outside-circle {
+    margin: 2rem;
+    font-size: 2rem;
+}
